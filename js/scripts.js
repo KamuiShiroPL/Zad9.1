@@ -8,13 +8,14 @@ var triangle3Area = getTriangleArea(20, 45);
 function getTriangleArea(a, h) {
   
   if (a <= 0 || h <= 0) {
-    alert("ERROR!")
+  	return false;
   }
 
-  else if (a >= 0 && h >= 0) {
-    value = a * h / 2;
-  };
-  return value;
+  else {
+  	console.log('wynik' , a*h/2)
+  	return a*h/2;
+  }
+
 };
 
 getTriangleArea();
